@@ -1,0 +1,284 @@
+Microsoft Windows [Version 10.0.19041.1]
+(c) 2019 Microsoft Corporation. All rights reserved.
+
+C:\Users\DELL>cd C:\Users\DELL\Documents\Software QA 2024\Newman
+
+C:\Users\DELL\Documents\Software QA 2024\Newman>newman run ReqresRemitaAPITestCollection.json
+newman
+
+Reqres_Remita API Test
+
+→ List Users
+  GET https://reqres.in/api/users?page=1 [200 OK, 1.92kB, 1211ms]
+  √  Status code is 200
+  ┌
+  │ {
+  │   page: 1,
+  │   per_page: 6,
+  │   total: 12,
+  │   total_pages: 2,
+  │   data: [
+  │     {
+  │       id: 1,
+  │       email: 'george.bluth@reqres.in',
+  │       first_name: 'George',
+  │       last_name: 'Bluth',
+  │       avatar: 'https://reqres.in/img/faces/1-image.jpg'
+  │     },
+  │     {
+  │       id: 2,
+  │       email: 'janet.weaver@reqres.in',
+  │       first_name: 'Janet',
+  │       last_name: 'Weaver',
+  │       avatar: 'https://reqres.in/img/faces/2-image.jpg'
+  │     },
+  │     {
+  │       id: 3,
+  │       email: 'emma.wong@reqres.in',
+  │       first_name: 'Emma',
+  │       last_name: 'Wong',
+  │       avatar: 'https://reqres.in/img/faces/3-image.jpg'
+  │     },
+  │     {
+  │       id: 4,
+  │       email: 'eve.holt@reqres.in',
+  │       first_name: 'Eve',
+  │       last_name: 'Holt',
+  │       avatar: 'https://reqres.in/img/faces/4-image.jpg'
+  │     },
+  │     {
+  │       id: 5,
+  │       email: 'charles.morris@reqres.in',
+  │       first_name: 'Charles',
+  │       last_name: 'Morris',
+  │       avatar: 'https://reqres.in/img/faces/5-image.jpg'
+  │     },
+  │     {
+  │       id: 6,
+  │       email: 'tracey.ramos@reqres.in',
+  │       first_name: 'Tracey',
+  │       last_name: 'Ramos',
+  │       avatar: 'https://reqres.in/img/faces/6-image.jpg'
+  │     }
+  │   ],
+  │   support: {
+  │     url: 'https://reqres.in/#support-heading',
+  │     text: 'To keep ReqRes free, contributions towards server costs are appreciated!'
+  │   }
+  │ }
+  │ 1
+  │ 'george.bluth@reqres.in'
+  │ 'George'
+  │ 'Bluth'
+  │ 'https://reqres.in/img/faces/1-image.jpg'
+  └
+  √  Body contains email address
+  √  Body contains User ID
+  1. Response time is less than 400ms
+  √  Status code should have the text OK
+
+→ Single User
+  GET https://reqres.in/api/users/6 [200 OK, 1.21kB, 221ms]
+  √  Status code is 200
+  ┌
+  │ {
+  │   data: {
+  │     id: 6,
+  │     email: 'tracey.ramos@reqres.in',
+  │     first_name: 'Tracey',
+  │     last_name: 'Ramos',
+  │     avatar: 'https://reqres.in/img/faces/6-image.jpg'
+  │   },
+  │   support: {
+  │     url: 'https://reqres.in/#support-heading',
+  │     text: 'To keep ReqRes free, contributions towards server costs are appreciated!'
+  │   }
+  │ }
+  │ 6
+  │ 'tracey.ramos@reqres.in'
+  │ 'Tracey'
+  │ 'Ramos'
+  │ 'https://reqres.in/img/faces/6-image.jpg'
+  └
+  √  Searching for User 6
+  √  Body contains User ID
+  √  Body contains User First Name
+  √  Response time is less than 300ms
+  √  Status code should have the text OK
+
+→ List resource
+  GET https://reqres.in/api/unknown [200 OK, 1.63kB, 214ms]
+  √  Status code is 200
+  ┌
+  │ {
+  │   page: 1,
+  │   per_page: 6,
+  │   total: 12,
+  │   total_pages: 2,
+  │   data: [
+  │     { id: 1, name: 'cerulean', year: 2000, color
+  │ [39m: '#98B2D1', pantone_value: '15-4020' },
+  │     { id: 2, name: 'fuchsia rose', year: 2001, co
+  │ lor: '#C74375', pantone_value: '17-2031' },
+  │     { id: 3, name: 'true red', year: 2002, color
+  │ [39m: '#BF1932', pantone_value: '19-1664' },
+  │     { id: 4, name: 'aqua sky', year: 2003, color
+  │ [39m: '#7BC4C4', pantone_value: '14-4811' },
+  │     { id: 5, name: 'tigerlily', year: 2004, color
+  │ : '#E2583E', pantone_value: '17-1456' },
+  │     { id: 6, name: 'blue turquoise', year: 2005,
+  │ color: '#53B0AE', pantone_value: '15-5217' }
+  │   ],
+  │   support: {
+  │     url: 'https://reqres.in/#support-heading',
+  │     text: 'To keep ReqRes free, contributions towards server costs are appreciated!'
+  │   }
+  │ }
+  │ 1
+  │ 12
+  │ 6
+  │ 6
+  │ '17-1456'
+  └
+  √  Body contains number of entries per page
+  √  Body contains User with ID 6
+  √  Response time is less than 400ms
+  √  Body contains pantone value
+  √  Status code should have the text OK
+
+→ Single resource
+  GET https://reqres.in/api/unknown/8 [200 OK, 1.15kB, 223ms]
+  √  Status code is 200
+  ┌
+  │ {
+  │   data: { id: 8, name: 'chili pepper', year: 2007
+  │ , color: '#9B1B30', pantone_value: '19-1557' },
+  │   support: {
+  │     url: 'https://reqres.in/#support-heading',
+  │     text: 'To keep ReqRes free, contributions towards server costs are appreciated!'
+  │   }
+  │ }
+  │ 8
+  │ 'chili pepper'
+  │ 2007
+  │ '#9B1B30'
+  └
+  √  Searching for User 8
+  √  Body contains User ID
+  √  Body contains Colour Name
+  √  Response time is less than 300ms
+  √  Status code should have the text OK
+
+→ Create
+  POST https://reqres.in/api/users [201 Created, 935B, 218ms]
+  √  Status code is 201
+  ┌
+  │ { name: 'Sylvia O', job: 'QA Engineer', id: '541',
+  │ 7mcreatedAt: '2024-01-01T06:15:21.764Z' }
+  │ 'Sylvia O'
+  └
+  √  Confirm Body contains id
+  √  User called Sylvia O was created
+  √  Confirm Body contains CreatedAt
+  √  Response time is less than 300ms
+  √  Status code should have the text Created
+
+→ Update
+  PUT https://reqres.in/api/users/3 [200 OK, 979B, 223ms]
+  √  Status code is 200
+  ┌
+  │ { name: 'Mother Hen', job: 'Pastress', updatedAt: '2024-01-
+  │ 01T06:15:22.248Z' }
+  │ 'Mother Hen'
+  │ 'Pastress'
+  │ '2024-01-01T06:15:22.248Z'
+  └
+  √  Confirm Body contains name
+  √  Confirm Body contains job
+  √  Confirm Body contains updatedAt
+  √  Confirm job was updated
+  √  Response time is less than 250ms
+  √  Status code should have the text OK
+
+→ Update
+  PATCH https://reqres.in/api/users/2 [200 OK, 959B, 207ms]
+  √  Status code is 200
+  ┌
+  │ { name: 'morpheus', job: 'zion resident', updatedAt: '2024-
+  │ 01-01T06:15:22.690Z' }
+  │ 'morpheus'
+  │ 'zion resident'
+  │ '2024-01-01T06:15:22.690Z'
+  └
+  √  Confirm Body contains name
+  √  Confirm Body contains job
+  √  Confirm Body contains updatedAt
+  √  Confirm name was updated
+  √  Confirm job was updated
+  √  Response time is less than 250ms
+  √  Status code should have the text OK
+
+→ Register - Successful
+  POST https://reqres.in/api/register [200 OK, 877B, 206ms]
+  √  Status code is 200
+  ┌
+  │ { id: 1, token: 'QpwL5tke4Pnpja7X1' }
+  │ 1
+  │ 'QpwL5tke4Pnpja7X1'
+  └
+  √  Confirm Body contains id
+  √  Confirm token was created
+  √  Response time is less than 250ms
+  √  Status code should have the text OK
+
+→ Register - Unsuccessful
+  POST https://reqres.in/api/register [400 Bad Request, 878B, 206ms]
+  √  Status code is 400
+  ┌
+  │ { error: 'Missing password' }
+  │ 'Missing password'
+  └
+  √  Confirm Body contains error
+  √  Confirm error message is user-intuitive
+  √  Response time is less than 250ms
+  √  Status code should have the text Bad Request
+
+→ Login - Successful
+  POST https://reqres.in/api/login [200 OK, 870B, 210ms]
+  √  Status code is 200
+  ┌
+  │ { token: 'QpwL5tke4Pnpja7X1' }
+  │ 'QpwL5tke4Pnpja7X1'
+  └
+  √  Confirm token was generated
+  √  Response time is less than 350ms
+  √  Status code should have the text OK
+
+┌─────────────────────────┬─────────────────────┬─────────────────────┐
+│                         │            executed │              failed │
+├─────────────────────────┼─────────────────────┼─────────────────────┤
+│              iterations │                   1 │                   0 │
+├─────────────────────────┼─────────────────────┼─────────────────────┤
+│                requests │                  10 │                   0 │
+├─────────────────────────┼─────────────────────┼─────────────────────┤
+│            test-scripts │                  20 │                   0 │
+├─────────────────────────┼─────────────────────┼─────────────────────┤
+│      prerequest-scripts │                  10 │                   0 │
+├─────────────────────────┼─────────────────────┼─────────────────────┤
+│              assertions │                  58 │                   1 │
+├─────────────────────────┴─────────────────────┴─────────────────────┤
+│ total run duration: 6.3s                                            │
+├─────────────────────────────────────────────────────────────────────┤
+│ total data received: 2.55kB (approx)                                │
+├─────────────────────────────────────────────────────────────────────┤
+│ average response time: 313ms [min: 206ms, max: 1211ms, s.d.: 299ms] │
+└─────────────────────────────────────────────────────────────────────┘
+
+  #  failure                detail
+
+ 1.  AssertionError         Response time is less than 400ms
+                            expected 1211 to be below 400
+                            at assertion:3 in test-script
+                            inside "List Users"
+
+C:\Users\DELL\Documents\Software QA 2024\Newman>

@@ -1,0 +1,620 @@
+{
+	"id": "674792e9-f8bf-4f3d-9fcf-d29a6dd3c49e",
+	"name": "Reqres_Remita API Test",
+	"timestamp": "2024-01-01T06:04:29.546Z",
+	"collection_id": "26273306-391da58a-7de1-4604-838e-4cc502062edc",
+	"folder_id": 0,
+	"environment_id": "0",
+	"totalPass": 57,
+	"delay": 0,
+	"persist": true,
+	"status": "finished",
+	"startedAt": "2024-01-01T06:04:17.035Z",
+	"totalFail": 1,
+	"results": [
+		{
+			"id": "45f7760b-8a34-489d-bdd8-54e1aca46255",
+			"name": "List Users",
+			"url": "https://reqres.in/api/users?page=1",
+			"time": 682,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Body contains email address": true,
+				"Body contains User ID": true,
+				"Response time is less than 400ms": false,
+				"Status code should have the text OK": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Body contains email address": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Body contains User ID": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 400ms": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Status code should have the text OK": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				682
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Body contains email address": true,
+					"Body contains User ID": true,
+					"Response time is less than 400ms": false,
+					"Status code should have the text OK": true
+				}
+			]
+		},
+		{
+			"id": "a0c2d7e6-ab6b-499a-a039-646a12e47ed8",
+			"name": "Single User",
+			"url": "https://reqres.in/api/users/6",
+			"time": 238,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Searching for User 6": true,
+				"Body contains User ID": true,
+				"Body contains User First Name": true,
+				"Response time is less than 300ms": true,
+				"Status code should have the text OK": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Searching for User 6": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Body contains User ID": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Body contains User First Name": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 300ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code should have the text OK": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				238
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Searching for User 6": true,
+					"Body contains User ID": true,
+					"Body contains User First Name": true,
+					"Response time is less than 300ms": true,
+					"Status code should have the text OK": true
+				}
+			]
+		},
+		{
+			"id": "366642b8-5cd4-4440-91c4-54553a039bcb",
+			"name": "List resource",
+			"url": "https://reqres.in/api/unknown",
+			"time": 209,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Body contains number of entries per page": true,
+				"Body contains User with ID 6 ": true,
+				"Response time is less than 400ms": true,
+				"Body contains pantone value": true,
+				"Status code should have the text OK": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Body contains number of entries per page": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Body contains User with ID 6 ": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 400ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Body contains pantone value": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code should have the text OK": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				209
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Body contains number of entries per page": true,
+					"Body contains User with ID 6 ": true,
+					"Response time is less than 400ms": true,
+					"Body contains pantone value": true,
+					"Status code should have the text OK": true
+				}
+			]
+		},
+		{
+			"id": "b536b84f-e857-454a-91e5-07d94934d818",
+			"name": "Single resource",
+			"url": "https://reqres.in/api/unknown/8",
+			"time": 203,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Searching for User 8": true,
+				"Body contains User ID": true,
+				"Body contains Colour Name": true,
+				"Response time is less than 300ms": true,
+				"Status code should have the text OK": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Searching for User 8": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Body contains User ID": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Body contains Colour Name": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 300ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code should have the text OK": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				203
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Searching for User 8": true,
+					"Body contains User ID": true,
+					"Body contains Colour Name": true,
+					"Response time is less than 300ms": true,
+					"Status code should have the text OK": true
+				}
+			]
+		},
+		{
+			"id": "b0ffbdd3-bb94-4e18-9732-01b9f876faee",
+			"name": "Create",
+			"url": "https://reqres.in/api/users",
+			"time": 209,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Status code is 201": true,
+				"Confirm Body contains id": true,
+				"User called Sylvia O was created": true,
+				"Confirm Body contains CreatedAt": true,
+				"Response time is less than 300ms": true,
+				"Status code should have the text Created": true
+			},
+			"testPassFailCounts": {
+				"Status code is 201": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Confirm Body contains id": {
+					"pass": 1,
+					"fail": 0
+				},
+				"User called Sylvia O was created": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Confirm Body contains CreatedAt": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 300ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code should have the text Created": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				209
+			],
+			"allTests": [
+				{
+					"Status code is 201": true,
+					"Confirm Body contains id": true,
+					"User called Sylvia O was created": true,
+					"Confirm Body contains CreatedAt": true,
+					"Response time is less than 300ms": true,
+					"Status code should have the text Created": true
+				}
+			]
+		},
+		{
+			"id": "4588fb1f-33d1-4072-a182-92a31a79207e",
+			"name": "Update",
+			"url": "https://reqres.in/api/users/3",
+			"time": 209,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Confirm Body contains name": true,
+				"Confirm Body contains job": true,
+				"Confirm Body contains updatedAt": true,
+				"Confirm job was updated": true,
+				"Response time is less than 250ms": true,
+				"Status code should have the text OK": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Confirm Body contains name": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Confirm Body contains job": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Confirm Body contains updatedAt": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Confirm job was updated": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 250ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code should have the text OK": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				209
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Confirm Body contains name": true,
+					"Confirm Body contains job": true,
+					"Confirm Body contains updatedAt": true,
+					"Confirm job was updated": true,
+					"Response time is less than 250ms": true,
+					"Status code should have the text OK": true
+				}
+			]
+		},
+		{
+			"id": "34056c2c-1d06-48a1-bbc7-c3ad289539b5",
+			"name": "Update",
+			"url": "https://reqres.in/api/users/2",
+			"time": 209,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Confirm Body contains name": true,
+				"Confirm Body contains job": true,
+				"Confirm Body contains updatedAt": true,
+				"Confirm name was updated": true,
+				"Confirm job was updated": true,
+				"Response time is less than 250ms": true,
+				"Status code should have the text OK": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Confirm Body contains name": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Confirm Body contains job": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Confirm Body contains updatedAt": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Confirm name was updated": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Confirm job was updated": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 250ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code should have the text OK": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				209
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Confirm Body contains name": true,
+					"Confirm Body contains job": true,
+					"Confirm Body contains updatedAt": true,
+					"Confirm name was updated": true,
+					"Confirm job was updated": true,
+					"Response time is less than 250ms": true,
+					"Status code should have the text OK": true
+				}
+			]
+		},
+		{
+			"id": "8a1f1599-e3b9-405b-84a6-e297b08c6d16",
+			"name": "Register - Successful",
+			"url": "https://reqres.in/api/register",
+			"time": 206,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Confirm Body contains id": true,
+				"Confirm token was created": true,
+				"Response time is less than 250ms": true,
+				"Status code should have the text OK": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Confirm Body contains id": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Confirm token was created": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 250ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code should have the text OK": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				206
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Confirm Body contains id": true,
+					"Confirm token was created": true,
+					"Response time is less than 250ms": true,
+					"Status code should have the text OK": true
+				}
+			]
+		},
+		{
+			"id": "300ff262-e7a0-4fea-ba42-a2aa46cb9414",
+			"name": "Register - Unsuccessful",
+			"url": "https://reqres.in/api/register",
+			"time": 200,
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request"
+			},
+			"tests": {
+				"Status code is 400": true,
+				"Confirm Body contains error": true,
+				"Confirm error message is user-intuitive": true,
+				"Response time is less than 250ms": true,
+				"Status code should have the text Bad Request": true
+			},
+			"testPassFailCounts": {
+				"Status code is 400": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Confirm Body contains error": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Confirm error message is user-intuitive": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 250ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code should have the text Bad Request": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				200
+			],
+			"allTests": [
+				{
+					"Status code is 400": true,
+					"Confirm Body contains error": true,
+					"Confirm error message is user-intuitive": true,
+					"Response time is less than 250ms": true,
+					"Status code should have the text Bad Request": true
+				}
+			]
+		},
+		{
+			"id": "f996fb34-e7fb-4c44-ba02-49649be2b1d8",
+			"name": "Login - Successful",
+			"url": "https://reqres.in/api/login",
+			"time": 199,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Confirm token was generated": true,
+				"Response time is less than 350ms": true,
+				"Status code should have the text OK": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Confirm token was generated": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 350ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code should have the text OK": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				199
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Confirm token was generated": true,
+					"Response time is less than 350ms": true,
+					"Status code should have the text OK": true
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 2564,
+	"collection": {
+		"requests": [
+			{
+				"id": "45f7760b-8a34-489d-bdd8-54e1aca46255",
+				"method": "GET"
+			},
+			{
+				"id": "a0c2d7e6-ab6b-499a-a039-646a12e47ed8",
+				"method": "GET"
+			},
+			{
+				"id": "366642b8-5cd4-4440-91c4-54553a039bcb",
+				"method": "GET"
+			},
+			{
+				"id": "b536b84f-e857-454a-91e5-07d94934d818",
+				"method": "GET"
+			},
+			{
+				"id": "b0ffbdd3-bb94-4e18-9732-01b9f876faee",
+				"method": "POST"
+			},
+			{
+				"id": "4588fb1f-33d1-4072-a182-92a31a79207e",
+				"method": "PUT"
+			},
+			{
+				"id": "34056c2c-1d06-48a1-bbc7-c3ad289539b5",
+				"method": "PATCH"
+			},
+			{
+				"id": "8a1f1599-e3b9-405b-84a6-e297b08c6d16",
+				"method": "POST"
+			},
+			{
+				"id": "300ff262-e7a0-4fea-ba42-a2aa46cb9414",
+				"method": "POST"
+			},
+			{
+				"id": "f996fb34-e7fb-4c44-ba02-49649be2b1d8",
+				"method": "POST"
+			}
+		]
+	}
+}
